@@ -45,7 +45,6 @@ function getipInformation(ip){
     });
 }
 
-
 function generateMap(lat, lng){
     //if (map != undefined) map.remove();
     const map = L.map('map').setView([lat, lng], 13);
