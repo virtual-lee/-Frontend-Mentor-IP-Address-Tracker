@@ -1,39 +1,3 @@
-/*let ip = "8.8.8.8";
-
-const data = {
-    "ip": "8.8.8.8",
-    "location": {
-        "country": "US",
-        "region": "California",
-        "city": "Mountain View",
-        "lat": 37.38605,
-        "lng": -122.08385,
-        "postalCode": "94035",
-        "timezone": "-07:00",
-        "geonameId": 5375480
-    },
-    "domains": [
-        "000000-1v1v1v1v1v1v118888888.sdqpwlbock-gkynimr.tokyo",
-        "000000-1v1v1v1v1v1v118888888.vqgnghfanh-qwkjxdkw.tokyo",
-        "000000000-00000000-00000x00x00.avtjjdduxprylg.tokyo",
-        "000000000-00000000-00000x00x00.besnwgjsyl-opygosu.top",
-        "000000000-00000000-00000x00x00.cpbsvcmdybtazu.top"
-    ],
-    "as": {
-        "asn": 15169,
-        "name": "GOOGLE",
-        "route": "8.8.8.0/24",
-        "domain": "https://about.google/intl/en/",
-        "type": "Content"
-    },
-    "isp": "Google LLC",
-    "proxy": {
-        "proxy": false,
-        "vpn": false,
-        "tor": false
-    }
-}*/
-
 $(document).ready(function () {
     $.getJSON("https://jsonip.com/?callback=?", function (data) {
         let ip = data.ip;
