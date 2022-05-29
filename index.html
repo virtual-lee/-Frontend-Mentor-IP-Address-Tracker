@@ -3,32 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="config.js" defer></script>
+  <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
+  <div id="container">
+    <div class="image-container">
+      <h1>IP Address Tracker</h1>
+      <form>
+        <input type="search" placeholder="Search for any IP address or domain">
+      </form>
+      <br>
+      <div id="results-container">
+        <div class="result ip">
+          <h6>IP ADDRESS</h6>
+          <div class="ip-result"></div>
+        </div>
+        <div class="result location">
+          <h6>LOCATION</h6>
+          <div class="location-result"></div>
+        </div>
+        <div class="result timezone">
+          <h6>TIMEZONE</h6>
+          <div class="timezone-result">UTC</div>
+        </div>
+        <div class="result isp">
+          <h6>ISP</h6>
+          <div class="isp-result"></div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">virtual-lee</a>.
   </div>
 </body>
 </html>

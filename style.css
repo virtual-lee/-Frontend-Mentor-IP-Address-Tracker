@@ -1,0 +1,101 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#map {
+    height: 70vh;
+    z-index: 1;
+}
+
+.image-container {
+    background-image: url(./images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 75vmax;
+    margin: 0 auto;
+    height:auto;
+}
+
+input {
+    margin-bottom: 100px;
+}
+
+#results-container {
+    display: flex;
+    flex-flow:row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: left;
+    background-color: white;
+    /*margin: 50px 100px 0px 100px;*/
+    margin: -50px auto auto 15vmax;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 9px 15px 5px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 9px 15px 5px rgba(0, 0, 0, 0.28);
+    z-index: 2;
+    position: absolute;
+    width: 50vmax;
+    gap: 10px;
+
+}
+
+.result {
+    width: 150px;
+    padding: 20px 10px 20px 10px;
+}
