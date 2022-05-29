@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -28,8 +30,8 @@ html {
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    font-family: sans-serif;
-    font-size: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
 }
@@ -71,20 +73,55 @@ img {
     height:auto;
 }
 
+h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+    padding: 20px;
+}
+
 input {
     margin-bottom: 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    width: 500px;
+    color: hsl(0, 0%, 59%);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+*:focus {
+    outline: none;
+}
+
+.arrow {
+    background-color: hsl(0, 0%, 17%);
+    padding: 16px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h6 {
+    font-size: 10px;
+    font-weight: normal;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 10px;
 }
 
 #results-container {
     display: flex;
     flex-flow:row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: stretch;
     text-align: left;
     background-color: white;
     /*margin: 50px 100px 0px 100px;*/
-    margin: -50px auto auto 15vmax;
-    padding: 10px;
+    margin: -60px auto auto 12vmax;
+    padding: 40px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 9px 15px 5px rgba(0, 0, 0, 0.28);
     box-shadow: 0px 9px 15px 5px rgba(0, 0, 0, 0.28);
@@ -96,6 +133,18 @@ input {
 }
 
 .result {
-    width: 150px;
-    padding: 20px 10px 20px 10px;
+    width: 300px;
+    padding: 0px 10px 0px 30px;
+    border-left: solid 1px;
+    border-color: hsl(0, 0%, 59%);
+}
+
+.ip {
+    border: none;
+}
+
+.result > div {
+    font-weight: 700;
+    color: hsl(0, 0%, 17%);
+    font-size: 20px;
 }
