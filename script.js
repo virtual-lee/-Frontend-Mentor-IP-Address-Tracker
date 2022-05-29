@@ -35,7 +35,7 @@ const data = {
 }*/
 
 $(document).ready(function () {
-    $.getJSON("http://jsonip.com/?callback=?", function (data) {
+    $.getJSON("https://jsonip.com/?callback=?", function (data) {
         let ip = data.ip;
         getipInformation(ip); 
     });
