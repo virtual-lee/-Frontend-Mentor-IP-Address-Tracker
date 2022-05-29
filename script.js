@@ -1,3 +1,4 @@
+//Fetch current ip address
 $(document).ready(function () {
     $.getJSON("https://jsonip.com/?callback=?", function (data) {
         let ip = data.ip;
